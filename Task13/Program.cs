@@ -1,12 +1,12 @@
 ﻿Console.WriteLine("Введите целое число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int result = n % 10;
-if ( n < 100 )
+string str = Console.ReadLine();
+char[] array = str.ToCharArray();
+if ( array.Length < 3)
 {
    Console.WriteLine("третьей цифры нет"); 
 }
 else
 {
-    Console.WriteLine(result);
+    Console.WriteLine(array[2]);
 }
 
